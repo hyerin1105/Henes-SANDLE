@@ -1,0 +1,29 @@
+{% block content %}
+{% load static %}
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+
+<body>
+    <!--상품목록-->
+    
+    <br> 
+    <hr width = "190px" color = "#184b9c" size = "3" style="margin-left: 15px;">
+    <div id="grid" style="text-align: center; margin-top: 200px;">
+        <div class="check">
+            <h1>산들 SANDLE</h1>
+            <h1>음식을 주문하셨나요?</h1>
+            <button type="button">
+                <img src="/static/images/logo.png" alt="check" width="400px" style="padding-left: 0px;">
+                <a href="goods" onclick="location.href='goods.html"></a>
+            </button>
+        </div>
+    </div>
+</body>
+{% endblock %}
+</html>

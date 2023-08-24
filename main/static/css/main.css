@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'EF_watermelonSalad';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_watermelonSalad.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    background: url(img.jpg) no-repeat center fixed;
+    background-size: cover;
+    background-color: #184b9c;
+}
+
+h1 {
+    /* padding-top: 10px;
+    margin-bottom: 57.44; */
+    padding-top: 4px;
+    margin-left:15px;
+    font-size: 80px;
+    color: #ffffff;
+    font-family: 'EF_watermelonSalad';
+}
+
+.check{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    font-family: 'EF_watermelonSalad';
+}
+
+#grid{
+    margin-top: 40px;
+}
+
+#grid_2{
+    margin-left: 50px;
+    
+    
+}
+
+.product_image1{
+    font-family: 'EF_watermelonSalad';
+    display:inline-block;
+    margin-left: 20px;
+    
+}
+
+
+.product_image2 { 
+    font-family: 'EF_watermelonSalad';
+    display:inline-block;
+    margin-left: 52px;
+}
+
+.product_image3 {
+    font-family: 'EF_watermelonSalad';
+    margin-left: 19px;
+    margin-top: 57px;
+    margin-right: 718px;
+    margin-bottom: 80px;
+}
