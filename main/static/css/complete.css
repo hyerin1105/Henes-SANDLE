@@ -20,8 +20,10 @@ h1 {
 }
 
 h2 {
-    padding-top: 30px;
+    margin-top: 20px;
     margin-left:15px;
+    margin-bottom: 20px;
+    padding: 0px;
     font-size: 65px;
     color: #ffffff;
     font-family: 'EF_watermelonSalad';
