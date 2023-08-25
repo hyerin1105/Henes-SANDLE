@@ -8,14 +8,14 @@
 html {
     background: url(img.jpg) no-repeat center fixed;
     background-size: cover;
-    background-color: #ffffff;
+    background-color: #184b9c;
 }
 
 h1 {
     padding-top: 50px;
     margin-left:15px;
     font-size: 80px;
-    color: #184b9c;
+    color: #ffffff;
     font-family: 'EF_watermelonSalad';
 }
 
