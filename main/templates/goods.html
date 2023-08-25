@@ -12,27 +12,41 @@
 	<div class="container" style="text-align: center;">
 		<fieldset>
 			<legend style="color: #888B81;">
-				<h1>가게명</h1><br><br>
-				<hr width = "190px" color = "#ffffff" size = "3" style="margin-left: 15px;">
-				<h1>온유</h1> <!-- admin에서 입력받은 대로 가게명 바꿀 수 있게 하기 -->
+				<br><br><br><br><br>
+				<h1>가게명</h1>
+				
+				<div class="bar" style="text-align: center">
+					<hr width = "190px" color = "#ffffff" size = "3">
+				</div>
+				<br><br><br>
+				
+				<h1>치악산 산자락 어딘가</h1> <!-- admin에서 입력받은 대로 가게명 바꿀 수 있게 하기 -->
 			</legend>
-			<br><br><br><br><br><br>
+			<br><br><br>
 			<legend style="color: #888B81;">
-				<h1>주문 상품</h1><br><br>
-				<hr width = "190px" color = "#ffffff" size = "3" style="margin-left: 15px;">
-				<br>
-				<div class="goods_image" style="float: left; padding: 80px;">
-					<img src="/static/images/porkbelly.jpg" alt="goods_2" width="215px">
-					<p><h1>어쩌고 저쩌고 돈가스 1개</h1></p>
-					<a href="complete">
-						<button type="button" onclick="location.href='complete.html'">
-							<img src="/static/images/logo.png" alt="check" width="400px" style="padding-left: 0px;">
-						</button>
-					</a>
+				<h1>주문 상품</h1>
+
+				<div class="bar" style="text-align: center">
+					<hr width = "190px" color = "#ffffff" size = "3">
+				</div>
+				<br><br><br>
+
+				<div class="img_peach" style="float: left;">
+					<img src="/static/images/peach.jpeg" alt="goods_2" width="220px">
+					<h1>치악산 복숭아 1박스</h1>
 				</div>
 			</legend>
 		</fieldset>
 	</div>
+
+	<div class="btn">
+		<a href="complete">
+			<button type="button" onclick="location.href='complete.html'">
+				<img src="/static/images/logo.png" alt="check" width="400px" style="padding-left: 0px;">
+			</button>
+		</a>
+	</div>
+	
 </body>
 </html>
 {% endblock %}

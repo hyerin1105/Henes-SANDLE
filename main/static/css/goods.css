@@ -14,15 +14,18 @@ html {
 h1 {
     padding-top: 40px;
     margin-left:15px;
+    margin-bottom: 40px;
     border-left: 30px;
     font-size: 40px;
     color: #ffffff;
     font-family: 'EF_watermelonSalad';
 }
 
-.goods_image {
+.img_peach {
     display: inline-block;
     vertical-align: middle;
+    padding-left: 350;
+    padding-bottom: 80;
 }
 
 .container {
@@ -30,4 +33,18 @@ h1 {
     padding-top: 0px;
     margin: 320px;
     margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+.bar {
+    color: #ffffff;
+    size: 3;
+    text-align: left; /* 문자들의 가운데 정렬을 해제 */
+    width: 190px;
+    margin: 0 auto;
+}
+
+.btn{
+    margin-left: 700px;
+    margin-bottom: 100px;
 }
