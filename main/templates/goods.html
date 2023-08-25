@@ -1,103 +1,36 @@
 {% block content %}
+{% load static %}
+
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<title>산들 - 상품</title>
+	<title>산들 SANDLE - 상품</title>
 	<link rel="stylesheet" type="text/css" href="{% static 'css/goods.css' %}">
 </head>
 
 <body>
-	<div class="BN">
-		<form>
-			<h4 style="color: #888B81;">나의 쇼핑 내역</h4><br>
-			<h6 style="color: #888B81;">주문 / 배송조회</h6><br><br>
-
-			<h4 style="color: #888B81;">회원정보</h4><br>
-			<h6 style="color: #888B81;">마이페이지</h6><br>
-			<h6 style="color: #888B81;">나의 배송지 관리</h6><br>
-			<h6 style="color: #888B81;">로그인 관리</h6>
-		</form>
-	</div>
-	
 	<div class="container">
-		<h1 style="color: #8DB72A;">상품</h1>
+		<h1 style="color: #8DB72A;">주문 상품</h1>
+		<hr width = "190px" color = "#184b9c" size = "3" style="margin-left: 15px;">
 		<br><br>
 		<form>
 		<fieldset>
-			<legend style="color: #888B81;"><h1>오늘의 인기 상품</h1></legend>
+			<legend style="color: #888B81;">
+				<h1>가게명</h1><p>
+				<h1>온유</h1> <!-- admin에서 입력받은 대로 가게명 바꿀 수 있게 하기 -->
+			</legend>
 			<ul><ul><ul><ul><ul><ul>
 	
 		<div class="grid" style="text-align: center;">
-			<div class="goods_image" style="float: left; padding: 80px;">
-				<img src="/static/images/onion.jpg" alt="goods_1" width="215px">
-
-				<h4>양파</h4>
-				<br><font color="gray">개당</font>
-				<p><h4>￦1,500</h4></p>
-
-				<input type="submit" value="담기" a hraf="http://127.0.0.1:8000/mypage">
-			</div>
-
 			<div class="goods_image" style="float: left; padding: 80px;">
 				<img src="/static/images/porkbelly.jpg" alt="goods_2" width="215px">
 
 				<h4>목우촌 프로포크 삼겹살</h4>
 				<br><font color="gray">100g당</font>
 				<p><h4>￦2,700</h4></p>
-
-				<input type="submit" value="담기" a hraf="http://127.0.0.1:8000/mypage">
-			</div>
-
-			<div class="goods_image" style="float: left; padding: 80px;">
-				<img src="/static/images/shinemuscat.jpg" alt="goods_3" width="215px">
-
-				<h4>샤인머스켓</h4>
-				<br><font color="gray">1.5kg 박스당</font>
-				<p><h4>￦29,800</h4></p>
-
-				<input type="submit" value="담기" a hraf="http://127.0.0.1:8000/mypage">
+				<input type="submit" value="담기" a hraf="http://127.0.0.1:8000/complete"></a>
 			</div>
 		</fieldset>
-	</div>
-	<div class="container">
-		<form>
-			<fieldset>
-				<legend style="color: #888B81;"><h1>금주 인기 상품</h1></legend>
-				<ul><ul><ul><ul><ul><ul>
-
-		<div class="grid" style="text-align: center;">
-			<div class="goods_image" style="float: left; padding: 80px;">
-				<img src="/static/images/paprika.jpg" alt="goods_4" width="215px">
-
-				<h4>피망</h4>
-				<br><font color="gray">개당</font>
-				<p><h4>￦1,500</h4></p>
-
-				<input type="submit" value="담기" a hraf="http://127.0.0.1:8000/mypage">
-			</div>
-				
-			<div class="goods_image" style="float: left; padding: 80px;">
-
-				<img src="/static/images/potato.jpg" alt="goods_5" width="215px">
-
-				<h4>감자</h4>
-				<br><font color="gray">개당</font>
-				<p><h4>￦1,500</h4></p>
-
-				<input type="submit" value="담기" a hraf="http://127.0.0.1:8000/mypage">
-			</div>
-
-			<div class="goods_image" style="float: left; padding: 80px;">
-
-				<img src="/static/images/carot.jpg" alt="goods_6" width="215px">
-				<h4>당근</h4>
-				<br><font color="gray">개당</font>
-				<p><h4>￦1,500</h4></p>
-
-				<input type="submit" value="담기" a hraf="http://127.0.0.1:8000/mypage">
-			</div>
-			</fieldset>
-		</div>
 	</div>
 </body>
 </html>

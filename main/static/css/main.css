@@ -8,16 +8,14 @@
 html {
     background: url(img.jpg) no-repeat center fixed;
     background-size: cover;
-    background-color: #184b9c;
+    background-color: #ffffff;
 }
 
 h1 {
-    /* padding-top: 10px;
-    margin-bottom: 57.44; */
-    padding-top: 4px;
+    padding-top: 50px;
     margin-left:15px;
     font-size: 80px;
-    color: #ffffff;
+    color: #184b9c;
     font-family: 'EF_watermelonSalad';
 }
 
@@ -26,36 +24,4 @@ h1 {
     vertical-align: middle;
     margin-left: 20px;
     font-family: 'EF_watermelonSalad';
-}
-
-#grid{
-    margin-top: 40px;
-}
-
-#grid_2{
-    margin-left: 50px;
-    
-    
-}
-
-.product_image1{
-    font-family: 'EF_watermelonSalad';
-    display:inline-block;
-    margin-left: 20px;
-    
-}
-
-
-.product_image2 { 
-    font-family: 'EF_watermelonSalad';
-    display:inline-block;
-    margin-left: 52px;
-}
-
-.product_image3 {
-    font-family: 'EF_watermelonSalad';
-    margin-left: 19px;
-    margin-top: 57px;
-    margin-right: 718px;
-    margin-bottom: 80px;
 }
