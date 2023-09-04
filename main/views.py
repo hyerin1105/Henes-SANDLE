@@ -8,3 +8,5 @@ def goods(request):
     return render(request,'goods.html')
 def complete(request):
     return render(request,'complete.html')
+def end(request):
+    return render(request, 'end.html')
