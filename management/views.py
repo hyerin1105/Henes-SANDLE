@@ -8,7 +8,7 @@ from django.contrib.auth.views import LogoutView
 
 def login(request):
     if request.method == "POST":
-        password=request.POST.get('password',None)
+        password=request.POST.get('password', None)
         user=auth.authenticate(request, password=password)
         if user is not None:
             auth.login(request, user)
