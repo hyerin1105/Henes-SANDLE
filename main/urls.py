@@ -5,6 +5,7 @@ from main import views
 urlpatterns = [
     ########### ceo ###########
     path('', views.wait, name="wait"),
+    path('wait', views.wait, name="wait"),
     path('loading', views.loading, name="loading"),
     path('checking', views.checking, name="checking"),
     ########### customer ###########

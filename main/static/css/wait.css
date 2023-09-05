@@ -10,3 +10,11 @@ html {
     background-size: cover;
     background-color: #184b9c;
 }
+
+.check{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-family: 'EF_watermelonSalad';
+}
