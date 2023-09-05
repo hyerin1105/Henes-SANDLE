@@ -17,3 +17,29 @@ def login(request):
             return HttpResponse('Login failed. Try again.')
     else:
         return render(request, 'login.html')
+
+"""    
+def login(request):
+    if request.method == 'GET':
+        return render(request, 'login.html')
+    elif request.method == 'POST':
+        password = request.POST.get('password', None)
+
+    res_data = ()
+
+    if not(password):
+        res_data['error'] = "비밀번호를 다시 입력해주세요."
+    else:
+        if check_password(password, customer.password):
+            request.session['customer'] = customer.id
+            return redirect('/')
+        else:
+            res_data['error'] = "비밀번호가 틀렸습니다."
+
+    return render(request, 'login.html', res_data)
+"""
+
+def logout(request):
+    if request.session.get('customer'):
+        del(request.session['customer'])
+    return redirect('/')
