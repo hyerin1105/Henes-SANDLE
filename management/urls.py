@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include
-from .views import login, join
+from . import login, join
 from django.contrib.auth.views import LogoutView
 from django.contrib.auth import views as auth_views
 from management import views
