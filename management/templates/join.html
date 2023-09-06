@@ -1,51 +1,38 @@
-<html>
-<div class="container my-3">
-    <form method="post" action="{% url 'management:join' %}">
-        {% csrf_token %}
-        {% include "form_errors.html" %}
-        <div class="mb-3">
-            <label for="username">사용자 이름</label>
-            <input type="text" class="form-control" name="username" id="username"
-                   value="{{ form.username.value|default_if_none:'' }}">
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산들 SANDLE - 고객 정보 등록</title>
+    <link rel="stylesheet"  href="{% static 'css/login.css' %}">
+</head>
+
+<body>
+    <div id="signup" align="center">
+        <div class="login_image">
+                <img src="/static/images/logo.png" alt="logo" width="30%" style="margin-top: 124px;">
+        <div>
+                <form method="POST" action="">
+                        {% csrf_token %}
+                    <div class="signup-page" style="padding-top: 20px;">
+                        <div class="form">
+                            <form class="signup-form">
+                                <input type="text" id="address" name="address" placeholder="주소" /><br>
+                                <input type="password" id="password" name="password" placeholder="비밀번호" /><br>
+                                <input type="password" id="password" name="password" placeholder="비밀번호 확인" /><br>
+                                <button type="submit" value="login">회원가입</button>
+
+                            </form>
+                            <p class="message">계정이 이미 있으신가요? <a href="http://127.0.0.1:8000/management/login/">로그인하기</a></p>
+                        </div>
+                    </div>
+                </form>
+             </div>
         </div>
-        <div class="mb-3">
-            <label for="password">비밀번호</label>
-            <input type="password" class="form-control" name="password" id="password"
-                   value="{{ form.password1.value|default_if_none:'' }}">
-        </div>
-        </div>
-        <button type="submit" class="btn btn-primary">생성하기</button>
-    </form>
-</div>
+    </div>
+</body>
+    {% endblock %}
 </html>
-
-<!--
-<html>
-    <head>
-        <title>Join Page</title>
-        <script src="common.js"></script>
-        <style>
-            div {
-                padding: 10px;
-            }
-        </style>
-    </head>
-
-    <body>
-        <div>
-            <label> 주소: <input id="id" type="text"></label>
-        </div>
-        <div>
-            <label> 비밀번호: <input id="id" type="text"></label>
-        </div>
-        <div>
-            <label> 비밀번호 확인: <input id="id" type="text"></label>
-        </div>
-
-        <div>
-            <input type="button" value="뒤로가기" onclick="back();">
-            <input type="button" value="계정 생성" onclick="create_id();">
-        </div>
-    </body>
-</html>
--->

@@ -1,11 +1,10 @@
 {% block content %}
 {% load static %}
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>산들 SANDLE - 로그인</title>
+    <title>산들 SANDLE - 고객 확인</title>
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
 </head>
 
@@ -19,11 +18,10 @@
                     <div class="login-page" style="padding-top: 20px;">
                         <div class="form">
                             <form class="login-form">
+                                <input type="text" id="address" name="address" placeholder="주소" /><br>
                                 <input type="password" id="password" name="password" placeholder="비밀번호" /><br>
                                 <button type="submit" value="login">login</button>
-
                             </form>
-                            <p class="message">비밀번호를 까먹으셨나요?<br>사장님 연락처: 010-****-@@@@</p>
                         </div>
                     </div>
                 </div>
