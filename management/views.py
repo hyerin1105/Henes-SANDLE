@@ -24,7 +24,7 @@ def login(request):
         else:
             return HttpResponse('Login failed. Try again.')
     else:
-        return render(request, 'management/login.html')
+        return render(request, 'login.html')
 
 def logout(request):
     if request.session.get('customer'):

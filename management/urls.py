@@ -14,7 +14,7 @@ urlpatterns = [
 app_name = 'management'
 
 urlpatterns = [
-    path('login/', auth_views.LoginView.as_view(template_name='management/login.html'), name='login'),
+    path('login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'), # 로그아웃 추가
     path('join/', views.join, name='join'),
 ]
