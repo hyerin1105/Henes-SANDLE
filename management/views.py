@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, HttpResponse
-from django.contrib.auth import authenticate, login, join
+from django.contrib.auth import authenticate, login
 from django.contrib.auth.forms import User
 from django.contrib import auth
 from main.forms import UserForm
@@ -11,10 +11,10 @@ def join(request):
         if form.is_valid():
             form.save()
             username = form.cleaned_data.get('username')
-            raw_password = form.cleaned_data.get('password1')
+            raw_password = form.cleaned_data.get('password')
             user = authenticate(username=username, password=raw_password)  # 사용자 인증
             login(request, user)  # 로그인
-            return redirect('index')
+            return redirect('goods')
     else:
         form = UserForm()
     return render(request, 'management/join.html', {'form': form})
