@@ -1,12 +1,12 @@
 from django.shortcuts import render, redirect, HttpResponse
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, join
 from django.contrib.auth.forms import User
 from django.contrib.auth.views import LoginView
 from django.contrib import auth
 from main.forms import LoginForm, UserForm
 from django.contrib.auth.views import LogoutView
-"""
-def signup(request):
+
+def join(request):
     if request.method == "POST":
         form = UserForm(request.POST)
         if form.is_valid():
@@ -31,7 +31,8 @@ def login(request):
             return HttpResponse('Login failed. Try again.')
     else:
         return render(request, 'login.html')
- 
+"""
+
 def login(request):
     if request.method == 'GET':
         return render(request, 'login.html')
@@ -50,9 +51,9 @@ def login(request):
             res_data['error'] = "비밀번호가 틀렸습니다."
 
     return render(request, 'login.html', res_data)
+"""
 
 def logout(request):
     if request.session.get('customer'):
         del(request.session['customer'])
     return redirect('/')
-"""
