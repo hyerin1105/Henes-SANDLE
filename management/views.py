@@ -1,10 +1,9 @@
 from django.shortcuts import render, redirect, HttpResponse
 from django.contrib.auth import authenticate, login, join
 from django.contrib.auth.forms import User
-from django.contrib.auth.views import LoginView
 from django.contrib import auth
-from main.forms import LoginForm, UserForm
-from django.contrib.auth.views import LogoutView
+from main.forms import UserForm
+from django.contrib.auth.views import LoginView, LogoutView
 
 def join(request):
     if request.method == "POST":
