@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from main.models import Customer
+#from main.views import customer_id
 from django.contrib.auth import get_user_model  # get_user_model 변수로 데이터베이스 조회 가능
 from django.http import HttpResponse  # 화면에 텍스트를 띄워주기 위함
 from django.contrib import auth  # 유저 정보 검증하기 위함
@@ -31,7 +32,7 @@ def sign_in_view(request):
         
         if me is not None:  # 입력한 정보가 존재하고 일치한다면
             auth.login(request, me)  # auth.login() 으로 토큰을 생성 및 전달
-            return HttpResponse(address + '님 환영합니다')
+            return render(request, 'goods.html', {'customer_id': customer_id})
         else:  # 입력한 정보가 없거나 틀리다면
             return redirect('management/login')  # 페이지 다시 로드
     elif request.method == 'GET':

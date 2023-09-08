@@ -10,7 +10,7 @@
 
 <body>
     <div class="loginbox" align="center">
-        <form method="POST" action="{% url 'goods' %}">
+        <form method="POST" action="">
             {% csrf_token %}
             <div class="login_image">
                 <img src="/static/images/logo.png" alt="logo" width="30%" style="margin-top: 124px;">
@@ -20,7 +20,7 @@
                             <form class="login-form">
                                 <input type="text" id="address" name="address" placeholder="주소" /><br>
                                 <input type="password" id="password" name="password" placeholder="비밀번호" /><br>
-                                <button type="submit" value="login" onclick="location.href='{% url 'goods' %}'">물품 픽업하기</button>
+                                <button type="submit" value="login">물품 픽업하기</button>
                             </form>
                         </div>
                     </div>
