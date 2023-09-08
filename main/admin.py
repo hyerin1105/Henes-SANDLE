@@ -7,6 +7,7 @@ admin.site.register(Customer)
 """
 from django.contrib import admin
 from django.db import models
+
 from .models import Customer
 
 class Customer(models.Model):  # models.Model를 상속
