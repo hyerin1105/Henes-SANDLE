@@ -1,6 +1,8 @@
-from django.shortcuts import render, redirect, HttpResponse
+from django.shortcuts import render, redirect
+from django.http import HttpResponse
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.forms import User
+# from .models import UserModel
 from django.contrib import auth
 from main.forms import UserForm
 from django.contrib.auth.views import LoginView, LogoutView
@@ -14,7 +16,8 @@ def join(request):
     return render(request, 'join.html')
 
 def login(request):
-    if request.method == "POST":
+    if request.method == "GET":
+        return render(request, 'management/login.html')
         address=request.POST.get('address',None)
         password=request.POST.get('password',None)
         user=auth.authenticate(request, address=address, password=password)
