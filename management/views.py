@@ -19,7 +19,7 @@ def sign_up_view(request):  # 회원가입 함수
         
         else:  # 같으면
             Customer.objects.create_user(address=address, password=password)  # 데이터베이스에 이름, 비밀번호, 자기소개를 저장
-            return redirect('main.html')  # 고객용 메인 페이지로 이동
+            return redirect('checking.html')  # 고객용 메인 페이지로 이동
             
 def sign_in_view(request):
     if request.method == 'POST':
