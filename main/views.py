@@ -15,16 +15,6 @@ def loading(request):
 def checking(request):
     return render(request, 'checking.html')
 
-@login_required(login_url='/login/')
-def create(request):
-    if request.method == 'POST':
-        post = Customer()
-        post.address = request.FILES['address']
-        post.password = request.FILES['password']
-        post.save()
-
-        return render(request, 'login.html')
-
 ########### customer ###########
 def main(request):
     return render(request,'main.html')
