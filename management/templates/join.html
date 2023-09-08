@@ -15,7 +15,7 @@
         <div class="login_image">
                 <img src="/static/images/logo.png" alt="logo" width="30%" style="margin-top: 124px;">
             <div>
-                <form method="POST" action="">
+                <form method="POST" action="join.html">
                         {% csrf_token %}
                     <div class="signup-page" style="padding-top: 20px;">
                         <div class="form">
@@ -23,7 +23,7 @@
                                     <input type="text" id="address" name="address" placeholder="주소" /><br>
                                     <input type="password" id="password" name="password" placeholder="비밀번호" /><br>
                                     <input type="password" id="password" name="password" placeholder="비밀번호 확인" /><br>
-                                    <button type="submit" value="login" a href="main.html">고객 등록하기</a></button>
+                                    <button type="submit"><a href="{% url 'main' %}">고객 등록하기</a></button>
                             </form>
                             <p class="message">이미 등록된 고객인가요? <a href="http://127.0.0.1:8000/management/login/">물품 픽업하기</a></p>
                         </div>
