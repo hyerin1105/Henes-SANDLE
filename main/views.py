@@ -19,8 +19,8 @@ def main1(request):
     return render(request,'main1.html')
 
 # @login_required(login_url='managment/login/')
-def goods(request):
-    return render(request, 'goods.html')
+def products(request):
+    return render(request, 'products.html')
 
 def complete(request):
     return render(request,'complete.html')

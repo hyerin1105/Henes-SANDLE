@@ -47,7 +47,7 @@ def login(request):
             customer = User.objects.get(username=username)
             if check_password(password, customer.password):
                 request.session['user'] = customer.id
-                return redirect('goods')
+                return redirect('products')
             else:
                 err_data['error'] = '비밀번호가 일치하지 않습니다.'
         return render(request, 'signup.html', err_data)

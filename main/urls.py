@@ -10,7 +10,7 @@ urlpatterns = [
     path('checking', views.checking, name="checking"),
     ########### customer ###########
     path('main1', views.main1, name="main1"),
-    path('goods', views.goods, name="goods"),
+    path('products', views.products, name="products"),
     path('complete', views.complete, name="complete"),
     path('end', views.end, name="end"),
 ]
