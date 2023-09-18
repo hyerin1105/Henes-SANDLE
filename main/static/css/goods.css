@@ -21,17 +21,11 @@ h1 {
 .img_peach {
     display: inline-block;
     vertical-align: middle;
-    padding-left: 350;
-    padding-bottom: 80;
 }
 
 .container {
     font-size: 24px;
     margin: auto;
-    width: 350px;
-    height: 200px;
-    outline: dashed 1px white;
-    display: flex;
     justify-content: center;
 
     display: table;
