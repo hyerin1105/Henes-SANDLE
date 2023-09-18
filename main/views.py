@@ -16,7 +16,7 @@ def checking(request):
 
 ########### customer ###########
 def main1(request):
-    return render(request,'main.html')
+    return render(request,'main1.html')
 
 # @login_required(login_url='managment/login/')
 def goods(request):
